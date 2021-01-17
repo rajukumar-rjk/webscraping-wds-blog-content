@@ -1,0 +1,2 @@
+# Web scraping example with BeautifulSoup4
+This porject has downloaded all the blog article heading and description from my one of the favourite javascript learning blog page - https://blog.webdevsimplified.com/

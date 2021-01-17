@@ -1,0 +1,4 @@
+.vscode/
+venv/
+wds_blog_scrapped_data.csv
+.idea/

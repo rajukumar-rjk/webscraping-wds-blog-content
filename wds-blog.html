@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+ <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+ <style id="typography.js">
+  html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}
+ </style>
+ <title data-react-helmet="true">
+  All posts | Web Dev Simplified Blog
+ </title>
+ <style type="text/css">
+  .gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}
+ </style>
+ <link href="https://www.google-analytics.com" rel="preconnect dns-prefetch"/>
+ <link href="/rss.xml" rel="alternate" type="application/rss+xml"/>
+ <link href="/icons/icon-48x48.png?v=086dd44f02b9c8d6a62a1b2a4324b5e7" rel="shortcut icon"/>
+ <link href="/manifest.webmanifest" rel="manifest"/>
+ <meta content="#00AAFF" name="theme-color"/>
+ <link href="/icons/icon-48x48.png?v=086dd44f02b9c8d6a62a1b2a4324b5e7" rel="apple-touch-icon" sizes="48x48"/>
+ <link href="/icons/icon-72x72.png?v=086dd44f02b9c8d6a62a1b2a4324b5e7" rel="apple-touch-icon" sizes="72x72"/>
+ <link href="/icons/icon-96x96.png?v=086dd44f02b9c8d6a62a1b2a4324b5e7" rel="apple-touch-icon" sizes="96x96"/>
+ <link href="/icons/icon-144x144.png?v=086dd44f02b9c8d6a62a1b2a4324b5e7" rel="apple-touch-icon" sizes="144x144"/>
+ <link href="/icons/icon-192x192.png?v=086dd44f02b9c8d6a62a1b2a4324b5e7" rel="apple-touch-icon" sizes="192x192"/>
+ <link href="/icons/icon-256x256.png?v=086dd44f02b9c8d6a62a1b2a4324b5e7" rel="apple-touch-icon" sizes="256x256"/>
+ <link href="/icons/icon-384x384.png?v=086dd44f02b9c8d6a62a1b2a4324b5e7" rel="apple-touch-icon" sizes="384x384"/>
+ <link href="/icons/icon-512x512.png?v=086dd44f02b9c8d6a62a1b2a4324b5e7" rel="apple-touch-icon" sizes="512x512"/>
+ <meta content="Gatsby 2.17.4" name="generator"/>
+ <meta content="Web Dev Simplified Blog" data-react-helmet="true" name="description"/>
+ <meta content="All posts" data-react-helmet="true" property="og:title"/>
+ <meta content="Web Dev Simplified Blog" data-react-helmet="true" property="og:description"/>
+ <meta content="website" data-react-helmet="true" property="og:type"/>
+ <meta content="summary" data-react-helmet="true" name="twitter:card"/>
+ <meta content="Kyle Cook" data-react-helmet="true" name="twitter:creator"/>
+ <meta content="All posts" data-react-helmet="true" name="twitter:title"/>
+ <meta content="Web Dev Simplified Blog" data-react-helmet="true" name="twitter:description"/>
+ <style data-href="/styles.888ebc8e1e357db76095.css">
+  .video-container{position:relative;padding-bottom:56.25%;height:0;width:100%}.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%}.wrapper{padding:1rem;border:1px solid #000;resize:horizontal;overflow:hidden}.animation-fill-mode-example{background-color:#ddd}.animation-fill-mode-example:hover{background-color:red;-webkit-animation-name:color-change;animation-name:color-change}@-webkit-keyframes color-change{0%{background-color:green}to{background-color:purple}}@keyframes color-change{0%{background-color:green}to{background-color:purple}}.triangle-1{position:relative;background-color:red;width:100px;height:100px}.triangle-1:before{content:"";position:absolute;right:-20px;top:calc(50% - 20px);width:40px;height:40px;background-color:#00f;-webkit-transform:rotate(45deg);transform:rotate(45deg);z-index:-1}.triangle-2{position:relative;background-color:red;width:100px;height:100px}.triangle-2:before{content:"";position:absolute;right:-80px;top:calc(50% - 40px);border:40px solid transparent;border-left-color:#00f}.clearfix:after{content:"";clear:both;display:block}.img{margin:0 1rem}.wrapper{padding:.5rem;color:#777;margin-bottom:2rem}.border{border:1px solid red}.p{margin:0}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.grecaptcha-badge{display:none!important}.gatsby-highlight-code-line{background-color:#55574a;display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:.75em;border-left:.25em solid #0af}.gatsby-highlight{background-color:#272822;border-radius:.3em;margin:.5em 0;padding:1em;overflow:auto}.gatsby-highlight pre[class*=language-]{background-color:transparent;margin:0;padding:0;overflow:initial;float:left;min-width:100%}*,:after,:before{box-sizing:border-box}.tag+label{cursor:pointer}.tag:focus+label{outline-width:2px;outline-color:#000;outline:2px auto #000;outline-offset:3px;border-radius:.25em;background-color:#99daff}.tag:hover+label{background-color:#99d6ff}.tag:checked+label{background-color:#0081cc;color:#fff}
+ </style>
+ <link as="script" href="/app-10de3c28574bb081bd4b.js" rel="preload"/>
+ <link as="script" href="/component---src-pages-index-js-e39b6e596f93cf70f1f6.js" rel="preload"/>
+ <link as="script" href="/styles-d3b163b642c5ddef9127.js" rel="preload"/>
+ <link as="script" href="/commons-39133950288879607822.js" rel="preload"/>
+ <link as="script" href="/webpack-runtime-d10416fd44deee7678c4.js" rel="preload"/>
+ <link as="fetch" crossorigin="anonymous" href="/page-data/index/page-data.json" rel="preload"/>
+</head>
+<body>
+<noscript id="gatsby-noscript">
+ This app works best with JavaScript enabled.
+</noscript>
+<div id="___gatsby">
+ <div id="gatsby-focus-wrapper" role="group" style="outline:none" tabindex="-1">
+  <div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem">
+   <header>
+    <h1 style="font-size:3.95285rem;line-height:4.375rem;margin-bottom:2.625rem;margin-top:0">
+     <a aria-current="page" class="" href="/" style="box-shadow:none;text-decoration:none;color:inherit">
+      Web Dev Simplified Blog
+     </a>
+    </h1>
+   </header>
+   <main>
+    <div style="display:flex;margin-bottom:1.75rem">
+     <div class="gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%">
+      <img alt="Kyle Cook" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAUEAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAABrYKGCKu5U+U8LzhD/8QAGxABAAICAwAAAAAAAAAAAAAAAgEDERIEEEL/2gAIAQEAAQUCuSJ3uPVsZEYmTGIa1Pt8q0v/xAAWEQEBAQAAAAAAAAAAAAAAAAABEAL/2gAIAQMBAT8BCZn/xAAVEQEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAgEBPwEp/8QAHxAAAgAFBQAAAAAAAAAAAAAAAAECECExURESIkFh/9oACAEBAAY/AuF2bnbEmd4qaDfkokmqH//EABsQAAMBAQEBAQAAAAAAAAAAAAABESExUUFh/9oACAEBAAE/IVmK6CgnD1H0Tqp9R7hua/Qh+EMR9VaTeuLi8JlDRYf/2gAMAwEAAgADAAAAEPTHA//EABkRAAIDAQAAAAAAAAAAAAAAAAABEBExQf/aAAgBAwEBPxC5R0PT/8QAFxEBAAMAAAAAAAAAAAAAAAAAAQAQIf/aAAgBAgEBPxBdsT//xAAbEAEBAQEBAQEBAAAAAAAAAAABEQAhMXFBgf/aAAgBAQABPxA24w7Jy6WQJsR+4jHiUzqEp0uJD0xhXQpUf5urWBcFIxjw/dXZEGnPg1KK0Lw3/9k=" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/>
+      <noscript>
+       <picture>
+        <source srcset="/static/3539ab3fa88bf8ed6913376a6a189c6f/9b664/profile-pic.jpg 1x,
+/static/3539ab3fa88bf8ed6913376a6a189c6f/06a10/profile-pic.jpg 1.5x,
+/static/3539ab3fa88bf8ed6913376a6a189c6f/f1b5a/profile-pic.jpg 2x"/>
+        <img alt="Kyle Cook" height="50" loading="lazy" src="/static/3539ab3fa88bf8ed6913376a6a189c6f/9b664/profile-pic.jpg" srcset="/static/3539ab3fa88bf8ed6913376a6a189c6f/9b664/profile-pic.jpg 1x,
+/static/3539ab3fa88bf8ed6913376a6a189c6f/06a10/profile-pic.jpg 1.5x,
+/static/3539ab3fa88bf8ed6913376a6a189c6f/f1b5a/profile-pic.jpg 2x" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" width="50"/>
+       </picture>
+      </noscript>
+     </div>
+     <div>
+      <p style="margin-bottom:0">
+       The official Web Dev Simplified blog by
+       <!-- -->
+       Kyle Cook
+       <!-- -->
+       .
+      </p>
+      <p>
+       Short and simple articles on web development.
+      </p>
+     </div>
+    </div>
+    <label for="search" style="font-weight:bold">
+     Search
+    </label>
+    <input id="search" style="width:100%;padding:.25em .5em" type="search" value=""/>
+    <div style="display:flex;flex-wrap:wrap">
+     <input class="tag" id="tag-JavaScript" style="opacity:0;position:absolute;left:-99999px" type="checkbox" value="JavaScript"/>
+     <label for="tag-JavaScript" style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.875rem">
+		<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+		 JavaScript
+		</span>
+      <div style="display:flex;align-items:center;font-size:.8em;background-color:black;color:white;border-radius:0 .25em .25em 0;padding:0 .5em;align-self:stretch">
+       27
+      </div>
+     </label>
+     <input class="tag" id="tag-CSS" style="opacity:0;position:absolute;left:-99999px" type="checkbox" value="CSS"/>
+     <label for="tag-CSS" style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.875rem">
+		<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+		 CSS
+		</span>
+      <div style="display:flex;align-items:center;font-size:.8em;background-color:black;color:white;border-radius:0 .25em .25em 0;padding:0 .5em;align-self:stretch">
+       14
+      </div>
+     </label>
+     <input class="tag" id="tag-React" style="opacity:0;position:absolute;left:-99999px" type="checkbox" value="React"/>
+     <label for="tag-React" style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.875rem">
+		<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+		 React
+		</span>
+      <div style="display:flex;align-items:center;font-size:.8em;background-color:black;color:white;border-radius:0 .25em .25em 0;padding:0 .5em;align-self:stretch">
+       13
+      </div>
+     </label>
+     <input class="tag" id="tag-Non-Technical Discussion" style="opacity:0;position:absolute;left:-99999px" type="checkbox" value="Non-Technical Discussion"/>
+     <label for="tag-Non-Technical Discussion" style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.875rem">
+		<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+		 Non-Technical Discussion
+		</span>
+      <div style="display:flex;align-items:center;font-size:.8em;background-color:black;color:white;border-radius:0 .25em .25em 0;padding:0 .5em;align-self:stretch">
+       7
+      </div>
+     </label>
+     <input class="tag" id="tag-Technical Discussion" style="opacity:0;position:absolute;left:-99999px" type="checkbox" value="Technical Discussion"/>
+     <label for="tag-Technical Discussion" style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.875rem">
+		<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+		 Technical Discussion
+		</span>
+      <div style="display:flex;align-items:center;font-size:.8em;background-color:black;color:white;border-radius:0 .25em .25em 0;padding:0 .5em;align-self:stretch">
+       6
+      </div>
+     </label>
+     <input class="tag" id="tag-HTML" style="opacity:0;position:absolute;left:-99999px" type="checkbox" value="HTML"/>
+     <label for="tag-HTML" style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.875rem">
+		<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+		 HTML
+		</span>
+      <div style="display:flex;align-items:center;font-size:.8em;background-color:black;color:white;border-radius:0 .25em .25em 0;padding:0 .5em;align-self:stretch">
+       2
+      </div>
+     </label>
+     <input class="tag" id="tag-Node.js" style="opacity:0;position:absolute;left:-99999px" type="checkbox" value="Node.js"/>
+     <label for="tag-Node.js" style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.875rem">
+		<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+		 Node.js
+		</span>
+      <div style="display:flex;align-items:center;font-size:.8em;background-color:black;color:white;border-radius:0 .25em .25em 0;padding:0 .5em;align-self:stretch">
+       2
+      </div>
+     </label>
+     <input class="tag" id="tag-Database" style="opacity:0;position:absolute;left:-99999px" type="checkbox" value="Database"/>
+     <label for="tag-Database" style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.875rem">
+		<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+		 Database
+		</span>
+      <div style="display:flex;align-items:center;font-size:.8em;background-color:black;color:white;border-radius:0 .25em .25em 0;padding:0 .5em;align-self:stretch">
+       1
+      </div>
+     </label>
+     <input class="tag" id="tag-Express" style="opacity:0;position:absolute;left:-99999px" type="checkbox" value="Express"/>
+     <label for="tag-Express" style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.875rem">
+		<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+		 Express
+		</span>
+      <div style="display:flex;align-items:center;font-size:.8em;background-color:black;color:white;border-radius:0 .25em .25em 0;padding:0 .5em;align-self:stretch">
+       1
+      </div>
+     </label>
+    </div>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2021-01/null-vs-undefined/" style="box-shadow:none">
+        Null Vs Undefined
+       </a>
+      </h3>
+      <small>
+       January 11, 2021
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       This article explains the difference between null and undefined in depth.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2021-01/javascript-sets/" style="box-shadow:none">
+        Start Using JavaScript Sets Now
+       </a>
+      </h3>
+      <small>
+       January 04, 2021
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Sets in JavaScript are a specialized type of array that is perfect for unique lists.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-12/javascript-array-flat/" style="box-shadow:none">
+        Complete Array#flat Guide
+       </a>
+      </h3>
+      <small>
+       December 28, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       If you are dealing with nested arrays then you need to know about the Array#flat method.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-12/react-prop-types/" style="box-shadow:none">
+        How To Use PropTypes In React
+       </a>
+      </h3>
+      <small>
+       December 21, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       PropTypes are perfect for adding basic type safety to your React project.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-12/responsive-css-video/" style="box-shadow:none">
+        Responsive CSS Aspect Ratio
+       </a>
+      </h3>
+      <small>
+       December 14, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Creating a responsive video or iframe that maintains its aspect ratio in CSS is much trickier than you may think.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-12/javascript-maps/" style="box-shadow:none">
+        Start Using JavaScript Maps Now
+       </a>
+      </h3>
+      <small>
+       December 07, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Maps in JavaScript are more performant, easier to use, and better equipped than JavaScript objects.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-11/class-list/" style="box-shadow:none">
+        Literally Everything You Need To Know About classList
+       </a>
+      </h3>
+      <small>
+       November 30, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       JavaScript classList seems straightforward, but there are actually multiple unique methods you probably don't know.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-11/css-floats/" style="box-shadow:none">
+        CSS Floats Are Still Useful
+       </a>
+      </h3>
+      <small>
+       November 09, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A short explanation on how CSS floats are still useful.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-11/css-clamp/" style="box-shadow:none">
+        CSS Clamp Is Amazing
+       </a>
+      </h3>
+      <small>
+       November 02, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A short explanation of how to use clamp in CSS.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-10/javascript-functions-as-arguments/" style="box-shadow:none">
+        Every Beginner Is Confused By This
+       </a>
+      </h3>
+      <small>
+       October 26, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       How passing functions to other functions works in JavaScript.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-10/javascript-data-attributes/" style="box-shadow:none">
+        Data Attributes In JavaScript
+       </a>
+      </h3>
+      <small>
+       October 19, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       How to use data attributes in JavaScript.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-10/react-debounce/" style="box-shadow:none">
+        Instant Easy React Performance With Debounce
+       </a>
+      </h3>
+      <small>
+       October 12, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Get easy and quick React performance with a custom debounce hook.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-10/javascript-nan/" style="box-shadow:none">
+        NaN - Not A Problem
+       </a>
+      </h3>
+      <small>
+       October 05, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Everything you need to know about NaN in JavaScript.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-09/pure-functions/" style="box-shadow:none">
+        What Are Pure Functions?
+       </a>
+      </h3>
+      <small>
+       September 28, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Technical Discussion
+			</span>
+         </label>
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A quick explanation on what pure functions are and how to use them.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-09/5-ways-to-become-a-better-developer/" style="box-shadow:none">
+        5 Ways To Become A Better Developer
+       </a>
+      </h3>
+      <small>
+       September 21, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Non-Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Here are some quick tips you can use to improve your development skills.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-09/arrow-functions/" style="box-shadow:none">
+        (Arrow Functions) =&gt; Explained
+       </a>
+      </h3>
+      <small>
+       September 14, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Arrow functions are one of the best features added to JavaScript and in this article I will explain everything you need to know about them.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-09/javascript-xss/" style="box-shadow:none">
+        How To Prevent The Most Common Cross Site Scripting Attack
+       </a>
+      </h3>
+      <small>
+       September 07, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A quick guide on how cross site scripting works and how to ensure your site is not vulnerable.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-08/javascript-iife/" style="box-shadow:none">
+        Stop Using IIFEs
+       </a>
+      </h3>
+      <small>
+       August 31, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Due to modern JavaScript features we no longer need to use immediately invoked function expressions.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-08/destructuring-and-spread/" style="box-shadow:none">
+        How To Use Destructuring And The Spread Operator? (One Of The Best JS Features)
+       </a>
+      </h3>
+      <small>
+       August 24, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth analysis of how to use destructuring and the spread operator with objects and arrays.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-08/cookies-localStorage-sessionStorage/" style="box-shadow:none">
+        JavaScript Cookies vs Local Storage vs Session Storage
+       </a>
+      </h3>
+      <small>
+       August 17, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth analysis of all the differences between cookies, localStorage, and sessionStorage.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-08/10-best-keyboard-shortcuts/" style="box-shadow:none">
+        10 Essential Keyboard Shortcuts For Programmers
+       </a>
+      </h3>
+      <small>
+       August 10, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       These are my 10 favorite keyboard shortcuts that I use everyday as a programmer.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-08/==-vs-===/" style="box-shadow:none">
+        Stop Using Double Equals In JavaScript
+       </a>
+      </h3>
+      <small>
+       August 03, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Everything you need to know about the difference between double and triple equals in JavaScript.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-07/css-calc/" style="box-shadow:none">
+        Everything You Need To Know About CSS Calc
+       </a>
+      </h3>
+      <small>
+       July 27, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       This article breaks down everything you need to know about CSS calc to take your CSS skills to the next level.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-07/use-layout-effect/" style="box-shadow:none">
+        Why Do We Need useLayoutEffect?
+       </a>
+      </h3>
+      <small>
+       July 20, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth look at every aspect of the useLayoutEffect React hook.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-07/javascript-hoisting/" style="box-shadow:none">
+        What The Heck Is Hoisting?
+       </a>
+      </h3>
+      <small>
+       July 13, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       You have probably heard of hoisting but what exactly is it and how does it work.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-07/relative-time-format/" style="box-shadow:none">
+        Relative Date Internationalization In JavaScript
+       </a>
+      </h3>
+      <small>
+       July 06, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Do you wish you could format dates like this: '2 days ago', 'yesterday'. Well with JavaScript internationalization it is incredibly easy.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-06/centering-with-css/" style="box-shadow:none">
+        How To Center Vertically In CSS
+       </a>
+      </h3>
+      <small>
+       June 29, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Every method you need to know to center elements in CSS.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-06/dynamic-module-import/" style="box-shadow:none">
+        Code Splitting With Dynamic Module Imports
+       </a>
+      </h3>
+      <small>
+       June 22, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A simple explanation of how to take advantage of dynamic imports to make your site load faster.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-06/template-tag/" style="box-shadow:none">
+        Why Use The HTML Template Tag?
+       </a>
+      </h3>
+      <small>
+       June 15, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 HTML
+			</span>
+         </label>
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth explanation of why you should be using the template tag.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-06/use-reducer/" style="box-shadow:none">
+        How To Manage Complex State In React With useReducer
+       </a>
+      </h3>
+      <small>
+       June 08, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth look at every aspect of the the useReducer hook in React.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-06/use-context/" style="box-shadow:none">
+        How To Use Context In React With Hooks
+       </a>
+      </h3>
+      <small>
+       June 01, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth look at every aspect of the the context API and the useContext hook in React.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-05/bem/" style="box-shadow:none">
+        How To Write Cleaner CSS With BEM
+       </a>
+      </h3>
+      <small>
+       May 25, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       This article covers everything you need to know about BEM in order to start using BEM to clean up and organize your CSS styles.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-05/ternary-operator/" style="box-shadow:none">
+        JavaScript Ternary Operator In Depth
+       </a>
+      </h3>
+      <small>
+       May 18, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Everything You Need To Know About The Ternary Operator In JavaScript.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-05/use-ref/" style="box-shadow:none">
+        How To Use Refs In React With Hooks
+       </a>
+      </h3>
+      <small>
+       May 11, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth look at every aspect of refs and the useRef hook in React.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-05/memoization-in-react/" style="box-shadow:none">
+        How To Use Memoization To Drastically Increase React Performance
+       </a>
+      </h3>
+      <small>
+       May 04, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth look at every aspect of the useMemo and useCallback React hooks.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-04/use-effect/" style="box-shadow:none">
+        Everything You Need To Know About useEffect
+       </a>
+      </h3>
+      <small>
+       April 27, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth look at every aspect of the useEffect React hook.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-04/use-state/" style="box-shadow:none">
+        Everything You Need To Know About useState
+       </a>
+      </h3>
+      <small>
+       April 20, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth look at every aspect of the useState React hook.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-04/trade-money-for-time/" style="box-shadow:none">
+        Why You Should Trade Money For Time
+       </a>
+      </h3>
+      <small>
+       April 13, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Non-Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       You are used to trading time for money at your job, but trading your money for time is just as important if not more important.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-04/why-everyone-should-learn-programming/" style="box-shadow:none">
+        Why Everyone Should Learn Programming
+       </a>
+      </h3>
+      <small>
+       April 06, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Non-Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       While not everyone should be a programmer I think it is crucial that everyone learns at least the basics of programming.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-03/css-triangles/" style="box-shadow:none">
+        CSS Triangles
+       </a>
+      </h3>
+      <small>
+       March 30, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Learn all about how triangles can be created and manipulated in CSS.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-03/animation-fill-mode/" style="box-shadow:none">
+        Animation Fill Mode
+       </a>
+      </h3>
+      <small>
+       March 23, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Animation fill mode is the single most important property of CSS animations to understand so in this article I will be breaking down exactly how to use animation fill mode and what it does.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-03/javascript-null-coalesce/" style="box-shadow:none">
+        JavaScript Null Coalesce
+       </a>
+      </h3>
+      <small>
+       March 16, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Null coalesce is a new JavaScript language feature which makes assigning default values for null/undefined incredibly easy.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-03/javascript-optional-chaining/" style="box-shadow:none">
+        JavaScript Optional Chaining
+       </a>
+      </h3>
+      <small>
+       March 09, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Optional chaining is a new JavaScript language feature which will revolutionize how null and undefined are handled.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-03/tagged-template-literals/" style="box-shadow:none">
+        Tagged Template Literals
+       </a>
+      </h3>
+      <small>
+       March 02, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Exploring the power of tagged template literals.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-02/n-plus-one-query/" style="box-shadow:none">
+        N + 1 Queries: The Easiest Way To Improve Performance
+       </a>
+      </h3>
+      <small>
+       February 24, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Database
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A brief explanation of N + 1 queries and how to avoid them.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-02/css-custom-properties/" style="box-shadow:none">
+        CSS Custom Properties
+       </a>
+      </h3>
+      <small>
+       February 17, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Everything you need to know about CSS custom properties.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-02/magic-numbers/" style="box-shadow:none">
+        What Are Magic Numbers And Why Are They Bad
+       </a>
+      </h3>
+      <small>
+       February 10, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A brief explanation of magic numbers in code and why they are bad.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-02/css-specificity/" style="box-shadow:none">
+        CSS Specificity Demystified
+       </a>
+      </h3>
+      <small>
+       February 03, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth breakdown of how CSS specificity works.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-01/dynamic-expandable-content/" style="box-shadow:none">
+        Dynamic Expandable Content (Read More Buttons)
+       </a>
+      </h3>
+      <small>
+       January 27, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 HTML
+			</span>
+         </label>
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Multiline text overflow fading and dynamic expand/collapse buttons are difficult to create so in this article I show you a simple way to do both.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-01/var-vs-let-vs-const/" style="box-shadow:none">
+        JavaScript Var vs Let vs Const
+       </a>
+      </h3>
+      <small>
+       January 20, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A quick explanation of the differences between var, let, and const.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-01/semantic-versioning/" style="box-shadow:none">
+        Semantic Versioning Explained
+       </a>
+      </h3>
+      <small>
+       January 13, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An explanation of what semantic versioning is and why it is important.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2020-01/guard-clauses/" style="box-shadow:none">
+        Guard Clauses - The Best Way To Write Complex Conditional Logic
+       </a>
+      </h3>
+      <small>
+       January 06, 2020
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An explanation of guard clauses and how they can be used to clean up complex nested conditional logic.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-12/css-supports-property/" style="box-shadow:none">
+        How To Use Modern CSS Without Breaking Old Browsers
+       </a>
+      </h3>
+      <small>
+       December 30, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An in depth tutorial on the @supports CSS at-rule, and how it can be used to write modern CSS without breaking older browser support.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-12/javascript-loading-attributes-explained/" style="box-shadow:none">
+        Async Vs Defer - JavaScript Loading Explanation
+       </a>
+      </h3>
+      <small>
+       December 23, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       An explanation of the difference between standard, async, and defer script tag loading, and which is the best to use.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-12/how-to-use-react-portal/" style="box-shadow:none">
+        The Forgotten React Renderer - React Portal
+       </a>
+      </h3>
+      <small>
+       December 16, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       React portal lets components be rendered outside their parent component which is incredibly useful in specific scenarios explained in depth in this article.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-12/express-middleware-in-depth/" style="box-shadow:none">
+        How To Use And Write Express Middleware
+       </a>
+      </h3>
+      <small>
+       December 09, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Express
+			</span>
+         </label>
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Node.js
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Middleware in Express is one of the easiest ways to create DRY and well written code which is why it is crucial to know how to use and write good middleware.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-12/always-prefer-local-state/" style="box-shadow:none">
+        Local State Is The Best State
+       </a>
+      </h3>
+      <small>
+       December 02, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Storing state in React is difficult to do right, but by storing state as locally as possible it can be a lot easier.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-11/the-importance-of-fitness/" style="box-shadow:none">
+        How Physical Activity Will Make You A Better Developer
+       </a>
+      </h3>
+      <small>
+       November 25, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Non-Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A brief explanation of why fitness and physical health is so important, especially for programmers.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-11/how-to-learn-any-topic-fast/" style="box-shadow:none">
+        How To Learn Any Topic Fast
+       </a>
+      </h3>
+      <small>
+       November 18, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Non-Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A simple step by step guide on how to learn any new technology or topic quickly and efficiently.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-11/how-to-write-custom-hooks/" style="box-shadow:none">
+        The Power Of Custom Hooks
+       </a>
+      </h3>
+      <small>
+       November 11, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A quick explanation of how to write custom hooks and why they are so useful.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-11/never-store-derived-state/" style="box-shadow:none">
+        Why You Should Never Store Derived State
+       </a>
+      </h3>
+      <small>
+       November 04, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 React
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       The quickest way to have corrupt out of sync state is by storing derived state.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-10/how-to-code-review-effectively/" style="box-shadow:none">
+        Why You Should Review Your Own Code And How To Review It Effectively
+       </a>
+      </h3>
+      <small>
+       October 28, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Non-Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A detailed description of the steps needed to deliver an effective code review, even if it is just for your own code.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-10/use-data-attributes-in-css/" style="box-shadow:none">
+        Why You Should Use Data Attributes In CSS
+       </a>
+      </h3>
+      <small>
+       October 21, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A quick breakdown of exactly how to use data attributes with CSS to create dynamic content.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-10/do-not-use-class-selectors-in-javascript/" style="box-shadow:none">
+        Why You Shouldn't Use Class Selectors In JavaScript
+       </a>
+      </h3>
+      <small>
+       October 14, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 CSS
+			</span>
+         </label>
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 JavaScript
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A breakdown of why the common practice of using class selectors in JavaScript makes code impossible to refactor, and what you should do instead.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-10/what-is-short-circuiting/" style="box-shadow:none">
+        What Is Short Circuiting?
+       </a>
+      </h3>
+      <small>
+       October 07, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A detailed breakdown of what short circuiting is, how it works, and why it is important.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-09/es6-modules-in-nodejs/" style="box-shadow:none">
+        How To Use ES6 Modules With Node.js
+       </a>
+      </h3>
+      <small>
+       September 30, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Node.js
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       Two simple ways to use ES6 modules with Node.js.
+      </p>
+     </section>
+    </article>
+    <article>
+     <header>
+      <h3 style="margin-bottom:0.4375rem">
+       <a href="/2019-09/colorblind-accessibility-testing/" style="box-shadow:none">
+        How To Effectively Test For Colorblind Accessibility
+       </a>
+      </h3>
+      <small>
+       September 23, 2019
+      </small>
+      <div style="margin-bottom:0.4375rem">
+       <small>
+        <div style="display:flex;flex-wrap:wrap">
+         <label style="display:flex;align-items:center;border-radius:.25em;margin-right:0.875rem;margin-top:0.4375rem">
+			<span style="padding:0 0.525rem;border-radius:.25em 0 0 .25em;border-right:none;border:1px solid black">
+			 Non-Technical Discussion
+			</span>
+         </label>
+        </div>
+       </small>
+      </div>
+     </header>
+     <section>
+      <p>
+       A quick tip on how to easily test any site for colorblind accessibility.
+      </p>
+     </section>
+    </article>
+   </main>
+  </div>
+ </div>
+</div>
+<script>
+ if(true) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ }
+ if (typeof ga === "function") {
+  ga('create', 'UA-146911304-2', 'auto', {});
+
+
+
+
+
+ }
+</script>
+<script id="gatsby-script-loader">
+ /*<![CDATA[*/window.pagePath="/";/*]]>*/
+</script>
+<script id="gatsby-chunk-mapping">
+ /*<![CDATA[*/window.___chunkMapping={"app":["/app-10de3c28574bb081bd4b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-a7388efdc62430243a75.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-b66172e20502aba166a6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-a763bd6fdc9f9328b167.js"],"component---src-pages-index-js":["/component---src-pages-index-js-e39b6e596f93cf70f1f6.js"]};/*]]>*/
+</script>
+<script async="" src="/webpack-runtime-d10416fd44deee7678c4.js">
+</script>
+<script async="" src="/commons-39133950288879607822.js">
+</script>
+<script async="" src="/styles-d3b163b642c5ddef9127.js">
+</script>
+<script async="" src="/component---src-pages-index-js-e39b6e596f93cf70f1f6.js">
+</script>
+<script async="" src="/app-10de3c28574bb081bd4b.js">
+</script>
+</body>
+</html>
